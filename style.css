@@ -1,0 +1,249 @@
+/* 
+1. Posicionamiento
+2. Modelo de Caja
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+
+:root{
+    /* COLORS */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFF;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* ----------------------------------HEADER---------------------------------- */
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header__text-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header__text-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header__text-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: var(--soft-orange);
+}
+
+.header__button{
+    border: 1px solid white;
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+    background-color: var(--off-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header__button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg');
+}
+
+/* ----------------------------------MAIN PART---------------------------------- */
+
+/* ----------------SECTION ONE---------------- */
+
+.section-one{
+    width: 100%;
+    text-align: center;
+    background-color: var(--off-white);
+}
+
+.section-one img{
+    width: 195px;
+    height: 195px;
+    margin-top: 60px;
+}
+
+.section-one h2{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    margin-top: 40px;
+    color: var(--warm-black);
+}
+
+.section-one p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #757575;
+    margin-top: 24px;
+}
+
+.section-one h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--bitcoin-orange);
+    margin-top: 48px;
+    margin-bottom: 12px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-left: 13px;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.table__row{
+    display: flex;
+}
+
+.table__col{
+    background-color: var(--just-white);
+    height: 39px;
+    display: flex;
+    align-items: center;
+    margin: 1px 1px;
+    padding-left: 12px;
+}
+
+.table__col--left{
+    width: 101px;
+    color: #B5B0AC;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.table__col--right{
+    width: 95px;
+    color: #775577;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.table__col--bitcoin{
+    border-radius: 8px 0 0 0;
+}
+
+.table__col--bitcoin-price{
+    border-radius: 0 8px 0 0;
+}
+
+.table__col--stellar{
+    border-radius: 0 0 0 8px;
+}
+
+.table__col--stellar-price{
+    border-radius: 0 0 8px 0;
+}
+
+.icon--treendingDown{
+    background-image: url('assets/icons/trending-down.svg');
+    margin-left: 10px;
+}
+
+.icon--treendingUp{
+    background-image: url('assets/icons/trending-up.svg');
+    margin-left: 10px;
+}
+
+.icon{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.icon--arrow{
+    background-image: url('assets/icons/right-arrow.svg');
+    opacity: .75;
+    position: absolute;
+    right: -25px;
+    top: calc(50% - 7px);
+    cursor: pointer;
+}
+
+.state{
+    display: inline-block;
+    background-color: var(--soft-orange);
+    font-family: 'Inter' ,sans-serif;
+    color: var(--warm-black);
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 16px;
+    margin-bottom: 64px;
+    font-size: 1.1rem;
+}
+
+.state b{
+    font-size: 1.2rem;
+}

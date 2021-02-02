@@ -108,142 +108,151 @@ header img{
 
 /* ----------------SECTION ONE---------------- */
 
-.section-one{
+main{
     width: 100%;
-    text-align: center;
+    height: auto;
     background-color: var(--off-white);
 }
 
-.section-one img{
-    width: 195px;
-    height: 195px;
-    margin-top: 60px;
+.section-one{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
-.section-one h2{
-    font-size: 2.4rem;
-    line-height: 2.6rem;
-    font-weight: 700;
-    margin-top: 40px;
-    color: var(--warm-black);
-}
-
-.section-one p{
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    font-weight: 500;
-    color: #757575;
-    margin-top: 24px;
-}
-
-.section-one h3{
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--bitcoin-orange);
-    margin-top: 48px;
-    margin-bottom: 12px;
+.section-one__backgroundImg{
     width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    padding-left: 13px;
-}
-
-.table{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
+    height: 200px;
     margin: 0 auto;
-    position: relative;
+    margin-bottom: 50px;
+    background-image: url('assets/img/bitcoin.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-
-.table__row{
-    display: flex;
+.section-one__container-title{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.table__col{
-    background-color: var(--just-white);
-    height: 39px;
-    display: flex;
-    align-items: center;
-    margin: 1px 1px;
-    padding-left: 12px;
+.section-one__container-title h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--black);
 }
 
-.table__col--left{
-    width: 101px;
-    color: #B5B0AC;
-    font-family: 'Inter', sans-serif;
+.section-one__container-title p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+.main-currency-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;   
+}
+
+.main-currency-table__title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+
+.currency-table__container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.currency-table__container table{
+    width: 100%;
+    height: 100%;
+}
+
+.currency-table__container td{
+    width: 50%;
     font-size: 1.6rem;
     font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
 }
 
-.table__col--right{
-    width: 95px;
-    color: #775577;
-    font-family: 'Inter', sans-serif;
+.table__top-left{
+    border-radius: 15px 0 0 0;
+}
+
+.table__top-right{
+    border-radius: 0 15px 0 0;
+}
+
+.table__bottom-left{
+    border-radius: 0 0 0 15px;
+}
+
+.table__bottom-right{
+    border-radius: 0 0 15px 0;
+}
+
+.currency-table__container .table__right{
+    font-weight: normal;
+    color: #757575;
     font-size: 1.4rem;
-    font-weight: 400;
+    line-height: 1.7rem;
 }
 
-.table__col--bitcoin{
-    border-radius: 8px 0 0 0;
-}
-
-.table__col--bitcoin-price{
-    border-radius: 0 8px 0 0;
-}
-
-.table__col--stellar{
-    border-radius: 0 0 0 8px;
-}
-
-.table__col--stellar-price{
-    border-radius: 0 0 8px 0;
-}
-
-.icon--treendingDown{
-    background-image: url('assets/icons/trending-down.svg');
-    margin-left: 10px;
-}
-
-.icon--treendingUp{
-    background-image: url('assets/icons/trending-up.svg');
-    margin-left: 10px;
-}
-
-.icon{
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.currency-table__container .down{
+    display: inline-block;
     width: 15px;
     height: 15px;
-    display: inline-block;
+    margin-left: 10px;
+    background-image: url('assets/icons/trending-down.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.icon--arrow{
-    background-image: url('assets/icons/right-arrow.svg');
-    opacity: .75;
-    position: absolute;
-    right: -25px;
-    top: calc(50% - 7px);
-    cursor: pointer;
+.currency-table__container .up{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url('assets/icons/trending-up.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.state{
-    display: inline-block;
-    background-color: var(--soft-orange);
-    font-family: 'Inter' ,sans-serif;
-    color: var(--warm-black);
+.currency-table__date{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
     padding: 8px;
+    background-color: var(--soft-orange);
     border-radius: 8px;
-    margin-top: 16px;
-    margin-bottom: 64px;
-    font-size: 1.1rem;
+
 }
 
-.state b{
+.currency-table__container p{
     font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
 }

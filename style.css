@@ -156,6 +156,13 @@ main{
     color: #757575;
 }
 
+.main-tables-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .main-currency-table{
     width: 70%;
     min-width: 235px;
@@ -163,6 +170,8 @@ main{
     height: 360px;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;   
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .main-currency-table__title{
@@ -255,4 +264,12 @@ main{
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: var(--warm-black);
+}
+
+.main-commission-table__title{
+    color: var(--secondary-blue);
+}
+
+.commission-table__date{
+    background-color: #E7F5FF;
 }

@@ -316,7 +316,7 @@ main{
 
 .section-two__article{
     width: 288px;
-    height: 152px;
+    min-height: 152px;
     background-color: #282623;
     padding-left: 18px;
     padding-right: 18px;
